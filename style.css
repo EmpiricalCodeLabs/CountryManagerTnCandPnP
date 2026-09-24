@@ -1,0 +1,253 @@
+/* Shared by every page. Plain CSS, no build step: GitHub Pages serves this
+   file as it stands. */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f5f7f5;
+  --text: #1c1f1c;
+  --muted: #5a625a;
+  --rule: #dfe4df;
+  --accent: #2e7d32;
+  --accent-text: #1b5e20;
+  --link: #1b5e20;
+  --fill-bg: #fff3c4;
+  --fill-text: #5c4400;
+  --note-bg: #eef6ee;
+  --note-rule: #2e7d32;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121412;
+    --surface: #1b1e1b;
+    --text: #e4e8e4;
+    --muted: #a3aca3;
+    --rule: #2e332e;
+    --accent: #66bb6a;
+    --accent-text: #a5d6a7;
+    --link: #a5d6a7;
+    --fill-bg: #4a3b00;
+    --fill-text: #ffe8a3;
+    --note-bg: #1a261a;
+    --note-rule: #66bb6a;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #121412;
+  --surface: #1b1e1b;
+  --text: #e4e8e4;
+  --muted: #a3aca3;
+  --rule: #2e332e;
+  --accent: #66bb6a;
+  --accent-text: #a5d6a7;
+  --link: #a5d6a7;
+  --fill-bg: #4a3b00;
+  --fill-text: #ffe8a3;
+  --note-bg: #1a261a;
+  --note-rule: #66bb6a;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+a { color: var(--link); text-underline-offset: 2px; }
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  background: var(--surface);
+}
+
+.site-header .inner,
+main,
+.site-footer .inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.site-header .inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 15px;
+}
+
+.site-nav a { text-decoration: none; }
+.site-nav a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+main { padding-top: 28px; padding-bottom: 48px; }
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin: 2.2em 0 0.5em;
+  padding-top: 0.6em;
+  border-top: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 1.6em 0 0.4em;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.lede { font-size: 1.08rem; }
+
+ul, ol { padding-left: 1.3em; }
+li { margin: 0.25em 0; }
+
+.toc {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.toc strong { display: block; margin-bottom: 4px; }
+.toc ol { margin: 0; }
+
+.note {
+  background: var(--note-bg);
+  border-left: 4px solid var(--note-rule);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 18px 0;
+}
+
+.note p:first-child { margin-top: 0; }
+.note p:last-child { margin-bottom: 0; }
+
+/* Something the publisher still has to fill in. Loud on purpose, so a page
+   published before it is finished is obviously unfinished. */
+.fill {
+  background: var(--fill-bg);
+  color: var(--fill-text);
+  padding: 0 4px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+}
+
+th { background: var(--surface); font-weight: 600; }
+
+dl.details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 18px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+dl.details dt { font-weight: 600; }
+dl.details dd { margin: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.6rem; }
+  dl.details { grid-template-columns: 1fr; gap: 2px; }
+  dl.details dd { margin-bottom: 8px; }
+}
+
+.cards {
+  display: grid;
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.card {
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.card:hover { border-color: var(--accent); }
+.card strong { display: block; color: var(--accent-text); font-size: 1.1rem; }
+.card span { color: var(--muted); font-size: 15px; }
+
+.steps li { margin: 0.5em 0; }
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.site-footer .inner { padding-top: 16px; padding-bottom: 24px; }
