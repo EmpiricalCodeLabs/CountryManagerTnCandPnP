@@ -22,7 +22,7 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Country Manager &middot; Last updated 24 September 2026 &middot; Version 2026-09-24</p>
+  <p class="meta">Country Manager &middot; Last updated 26 September 2026 &middot; Version 2026-09-26</p>
 
   <p class="lede">This policy explains what the Country Manager app collects, why, who can see it,
   how long it is kept, and what you can ask us to do about it. Country Manager is used on farms in
@@ -39,6 +39,8 @@
       <li>Records are stored on Google's servers in the European Union.</li>
       <li>Location is used only while the app is open on your screen. Where you go is never
         recorded.</li>
+      <li>Notifications are your choice. If you allow them, your phone gets a short line when a
+        notice goes up, a job is given to you, a to-do falls due, or advice comes in.</li>
       <li>You can delete your account in the app, or <a href="delete-account.html">ask us to
         delete it</a>.</li>
     </ul>
@@ -50,7 +52,7 @@
       <li><a href="#who">Who we are</a></li>
       <li><a href="#roles">Your account and your farm's records</a></li>
       <li><a href="#collect">What we collect</a></li>
-      <li><a href="#location">Location</a></li>
+      <li><a href="#location">Location and notifications</a></li>
       <li><a href="#use">What we use it for</a></li>
       <li><a href="#see">Who can see it</a></li>
       <li><a href="#providers">Services we use</a></li>
@@ -161,7 +163,14 @@
   remove that copy. It stays until the app is uninstalled or its storage is cleared in Android's
   settings.</p>
 
-  <h2 id="location">4. Location</h2>
+  <h3>3.9 Your phone, if you allow notifications</h3>
+  <p>A token from Google's Firebase Cloud Messaging that lets our server reach the app on your
+  phone, with your account's id and when it was last registered. See
+  <a href="#notifications">section 4.2</a>.</p>
+
+  <h2 id="location">4. Location and notifications</h2>
+
+  <h3>4.1 Location</h3>
   <ul>
     <li>The app uses your phone's precise location (GPS) only while the app is open on your
       screen. It uses it for two things: to show where you are on the map, and to draw a field's
@@ -176,6 +185,25 @@
   <p>The satellite map comes from Esri. To show it, your phone downloads map images from Esri's
   servers. Esri therefore receives your IP address and the part of the map you are looking at, as
   any website you visit would.</p>
+
+  <h3 id="notifications">4.2 Notifications</h3>
+  <ul>
+    <li><strong>Only if you allow them.</strong> Android asks you first. Until you say yes, the app
+      makes no notification token for your phone, and nothing about your phone is sent to us for
+      notifications. You can turn them off later, all of them or one kind at a time, in Android's
+      settings. The app's Account screen takes you there.</li>
+    <li><strong>What we keep:</strong> the token that lets our server reach the app on your phone,
+      with your account's id and when it was last registered. There is one for each phone. When
+      somebody else signs in on the same phone, it becomes theirs, and signing out removes it.</li>
+    <li><strong>What a notification says:</strong> which holding it is about, and one line. That
+      is who put up a notice and what it says, the name of a job given to you or falling due, or
+      the title of a piece of advice and who wrote it. You are only ever sent a notification about
+      a record you can already see in the app.</li>
+    <li><strong>Reminders.</strong> If a job has a due date or a reminder time, our server keeps
+      when it should remind you until the reminder is sent, or the job is done or deleted.</li>
+    <li><strong>Your lock screen.</strong> Android shows notifications on the lock screen unless
+      you change that in its settings, so anyone who picks up the phone may read them there.</li>
+  </ul>
 
   <h2 id="use">5. What we use it for</h2>
   <p>Both laws allow information to be used only for a lawful reason. These are ours. The
@@ -195,6 +223,13 @@
           <td>Show each member the records of their holding that they are allowed to see</td>
           <td>Memberships, farm records</td>
           <td>Needed to provide the service, done on the holding's instructions as its processor</td>
+        </tr>
+        <tr>
+          <td>Send you notifications about notices, jobs given to you, to-do reminders and advice</td>
+          <td>Your phone's notification token; the record the notification is about</td>
+          <td>Needed to provide the service you asked for by allowing notifications (GDPR 6(1)(b);
+            POPIA 11(1)(b)). The records are the holding's, used on its instructions as its
+            processor</td>
         </tr>
         <tr>
           <td>Keep a record of which terms and policy you accepted</td>
@@ -276,6 +311,18 @@
           <td>Everything described in <a href="#collect">section 3</a></td>
         </tr>
         <tr>
+          <td>Google Cloud Functions</td>
+          <td>Our own code on Google's servers. It works out who a notification is for and sends
+            it, and runs trials and promo codes</td>
+          <td>The records it needs for that, read from the database. It runs in Belgium, in the
+            European Union</td>
+        </tr>
+        <tr>
+          <td>Google Firebase Cloud Messaging</td>
+          <td>Delivering notifications to your phone</td>
+          <td>Your phone's notification token, and the text of each notification</td>
+        </tr>
+        <tr>
           <td>Google Play</td>
           <td>Installing the app and taking subscription payments</td>
           <td>Your purchase and payment details, under Google's own privacy policy</td>
@@ -307,6 +354,10 @@
       standard contractual clauses and the EU&ndash;US Data Privacy Framework.</li>
     <li><strong>Map requests</strong> go from your phone straight to Esri, which may handle them in
       the United States under its own privacy statement.</li>
+    <li><strong>Notifications</strong> are worked out in the European Union, then delivered by
+      Google's Firebase Cloud Messaging, which may carry them through servers outside it. Google
+      protects such transfers with the same standard contractual clauses and the EU&ndash;US Data
+      Privacy Framework.</li>
   </ul>
 
   <h2 id="keep">9. How long we keep it</h2>
@@ -323,6 +374,11 @@
       them. Section 31 of the Basic Conditions of Employment Act requires an employer to keep them
       for three years after the last entry. The farm decides when to remove them.</li>
     <li><strong>Purchase records:</strong> seven years, as Dutch tax law requires.</li>
+    <li><strong>Your phone's notification token:</strong> until you sign out on that phone or
+      delete your account, or until Google tells us it no longer works, for example because the
+      app was uninstalled.</li>
+    <li><strong>Reminders waiting to be sent:</strong> until they are sent, or the job is done,
+      moved or deleted.</li>
     <li><strong>Emails you send us:</strong> for as long as we need them to deal with what you
       asked, then deleted.</li>
   </ul>
@@ -337,8 +393,8 @@
   <a href="delete-account.html">account deletion page</a>.</p>
   <ul>
     <li><strong>Deleted:</strong> your sign-in, your profile (name, email address, phone number,
-      photo link and the record of the terms you accepted), and your membership of every
-      holding.</li>
+      photo link and the record of the terms you accepted), your membership of every holding, and
+      the notification token of every phone you signed in on.</li>
     <li><strong>Kept:</strong> records you made on a holding, with your name on them, because they
       belong to the farm. The records are deleted when the holding is deleted.</li>
     <li><strong>If you own a holding,</strong> you must hand it over or delete it first. A holding
@@ -355,6 +411,8 @@
       role on the holding. A tampered-with copy of the app still cannot open another holding's
       records.</li>
     <li>Invite codes can be made to expire and can be withdrawn.</li>
+    <li>Only you can read your phone's notification token. Our server reads it only to send you
+      notifications.</li>
     <li>Deleting an account requires a fresh password or Google sign-in.</li>
     <li>Your phone holds a copy of the records you open (see <a href="#collect">section 3.8</a>).
       Use a screen lock. Anyone holding your unlocked phone can see what you can see.</li>
