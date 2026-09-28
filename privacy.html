@@ -22,7 +22,7 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Country Manager &middot; Last updated 27 September 2026 &middot; Version 2026-09-27</p>
+  <p class="meta">Country Manager &middot; Last updated 28 September 2026 &middot; Version 2026-09-28</p>
 
   <p class="lede">This policy explains what the Country Manager app collects, why, who can see it,
   how long it is kept, and what you can ask us to do about it. Country Manager is used on farms in
@@ -74,7 +74,7 @@
   <em>controller</em> under the GDPR and the <em>responsible party</em> under POPIA. Egidius
   Benedictus van Wyk is also our Information Officer under POPIA. We have not appointed a data
   protection officer, because the GDPR does not require one for a service of this kind.</p>
-  <dl class="details">
+  <dl class="details plain">
     <dt>Name</dt><dd>Egidius Benedictus van Wyk, trading as EmpiricalCodeLabs</dd>
     <dt>Address</dt><dd>Pegasus 44, 5505 RL Veldhoven, the Netherlands</dd>
     <dt>Email</dt><dd><a href="mailto:empiricalcodelabs@gmail.com">empiricalcodelabs@gmail.com</a></dd>
@@ -108,6 +108,8 @@
     <li>When your account was created and when you last used the app.</li>
     <li>Which version of the Terms and Conditions and of this Privacy Policy you accepted, and
       when.</li>
+    <li>Which cards and buttons you chose for your dashboard on each holding. Only you can see
+      this.</li>
   </ul>
   <p>You need to give us an email address and a name to use Country Manager. Without them we
   can't create your account.</p>
@@ -327,7 +329,7 @@
         <tr>
           <td>Google Cloud Functions</td>
           <td>Our own code on Google's servers. It works out who a notification is for and sends
-            it, and runs trials and promo codes</td>
+            it, runs trials and promo codes, and fetches each farm's weather forecast</td>
           <td>The records it needs for that, read from the database. It runs in Belgium, in the
             European Union</td>
         </tr>
@@ -346,14 +348,22 @@
           <td>Satellite map imagery</td>
           <td>Your IP address and the part of the map you are viewing</td>
         </tr>
+        <tr>
+          <td>MET Norway (the Norwegian Meteorological Institute)</td>
+          <td>The weather forecast on the dashboard</td>
+          <td>A point for each farm, to within about 10 metres: the farm's saved centre, or the
+            middle of its fields. Our server asks, not your phone, so MET Norway does not receive
+            your name, email address, phone number or IP address</td>
+        </tr>
       </tbody>
     </table>
   </div>
   <p>Google processes information for us under its data processing terms. Those terms bind it to
   keep the information confidential and secure, and to use it only to provide its service. See
   <a href="https://policies.google.com/privacy">Google's privacy policy</a>,
-  <a href="https://firebase.google.com/support/privacy">Firebase's privacy and security page</a> and
-  <a href="https://www.esri.com/en-us/privacy/overview">Esri's privacy statement</a>.</p>
+  <a href="https://firebase.google.com/support/privacy">Firebase's privacy and security page</a>,
+  <a href="https://www.esri.com/en-us/privacy/overview">Esri's privacy statement</a> and
+  <a href="https://api.met.no/doc/TermsOfService">MET Norway's terms of service</a>.</p>
 
   <h2 id="where">8. Where it is stored</h2>
   <p>The database is Google Cloud Firestore, in Google's European multi-region, which uses data
@@ -368,6 +378,8 @@
       standard contractual clauses and the EU&ndash;US Data Privacy Framework.</li>
     <li><strong>Map requests</strong> go from your phone straight to Esri, which may handle them in
       the United States under its own privacy statement.</li>
+    <li><strong>Weather forecasts</strong> are asked for by our server in the European Union, from
+      MET Norway in Norway. Norway is in the European Economic Area, where the GDPR applies.</li>
     <li><strong>Notifications</strong> are worked out in the European Union, then delivered by
       Google's Firebase Cloud Messaging, which may carry them through servers outside it. Google
       protects such transfers with the same standard contractual clauses and the EU&ndash;US Data

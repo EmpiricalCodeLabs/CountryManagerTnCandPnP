@@ -215,6 +215,20 @@ dl.details {
 dl.details dt { font-weight: 600; }
 dl.details dd { margin: 0; overflow-wrap: anywhere; }
 
+/* Our own name and address: there because the law asks for them, not
+   something the page should point at. Plain text, no box. */
+dl.details.plain {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  gap: 2px 14px;
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
+dl.details.plain dt { font-weight: 400; }
+
 @media (max-width: 520px) {
   body { font-size: 16px; }
   h1 { font-size: 1.6rem; }
