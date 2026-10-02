@@ -22,7 +22,7 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Country Manager &middot; Last updated 1 October 2026 &middot; Version 2026-10-01</p>
+  <p class="meta">Country Manager &middot; Last updated 2 October 2026 &middot; Version 2026-10-02</p>
 
   <p class="lede">This policy explains what the Country Manager app collects, why, who can see it,
   how long it is kept, and what you can ask us to do about it. Country Manager is used on farms in
@@ -33,14 +33,16 @@
   <div class="note">
     <p><strong>In short</strong></p>
     <ul>
-      <li>We collect what the app needs to work: your account details, and the farm records you
-        and the people you work with type in.</li>
+      <li>We collect what the app needs to work: your account details, the farm records you and
+        the people you work with type in, and the problems and ideas you choose to send us.</li>
       <li>We don't sell your information, show adverts, or use analytics or tracking tools.</li>
       <li>Records are stored on Google's servers in the European Union.</li>
       <li>Location is used only while the app is open on your screen. Where you go is never
         recorded.</li>
       <li>Notifications are your choice. If you allow them, your phone gets a short line when a
-        notice goes up, a job is given to you, a to-do falls due, or advice comes in.</li>
+        notice goes up, a job is given to you, a to-do falls due, advice comes in or yours is
+        answered, a holding is offered to you or your offer is answered, or a holding's
+        subscription needs you.</li>
       <li>You can delete your account in the app, or <a href="delete-account.html">ask us to
         delete it</a>.</li>
     </ul>
@@ -207,6 +209,12 @@
   opened on it, to within an hour. Only you can see this, when you sign in somewhere else.
   Signing out removes it.</p>
 
+  <h3 id="reports">3.11 Problems and ideas you send</h3>
+  <p>When you use &ldquo;Report a problem or idea&rdquo;, we receive what you write, the
+  screenshots you choose to add, your name and email address, the app version, whether it is a
+  phone or a computer and its make and model, and the holding you had open and your role on it.
+  Only we read it, to fix the app or weigh the idea. Sending one is up to you.</p>
+
   <h2 id="location">4. Location and notifications</h2>
 
   <h3>4.1 Location</h3>
@@ -238,6 +246,12 @@
       is who put up a notice and what it says, the name of a job given to you or falling due, or
       the title of a piece of advice and who wrote it. You are only ever sent a notification about
       a record you can already see in the app.</li>
+    <li><strong>Also:</strong> an adviser hears the farm's answer to their advice (accepted,
+      declined or marked done, with the farm's note). For a holding's subscription, its owner and
+      directors get a daily reminder while its free time runs out, while nobody is paying for it,
+      and while it is read-only, and its owner hears once the day subscriptions start. When a
+      holding is handed over, the person it is offered to hears of the offer, and the owner who
+      offered it hears their answer.</li>
     <li><strong>Reminders.</strong> If a job has a due date or a reminder time, our server keeps
       when it should remind you until the reminder is sent, or the job is done or deleted.</li>
     <li><strong>Your lock screen.</strong> Android shows notifications on the lock screen unless
@@ -264,11 +278,20 @@
           <td>Needed to provide the service, done on the holding's instructions as its processor</td>
         </tr>
         <tr>
-          <td>Send you notifications about notices, jobs given to you, to-do reminders and advice</td>
+          <td>Send you notifications about notices, jobs given to you, to-do reminders, advice and
+            the answers to it, a holding offered to you or your offer answered, and a holding's
+            subscription</td>
           <td>Your phone's notification token; the record the notification is about</td>
           <td>Needed to provide the service you asked for by allowing notifications (GDPR 6(1)(b);
             POPIA 11(1)(b)). The records are the holding's, used on its instructions as its
             processor</td>
+        </tr>
+        <tr>
+          <td>Show where you are on the map, and draw a field's boundary as you walk it</td>
+          <td>Your phone's location, used on the phone (<a href="#location">4.1</a>)</td>
+          <td>Your consent, given in Android's permission prompt and taken back in its settings
+            (GDPR 6(1)(a); POPIA 11(1)(a)). A position you save becomes part of the farm's
+            records</td>
         </tr>
         <tr>
           <td>Let each account be used on one phone and one computer at a time, and tell you where
@@ -296,6 +319,13 @@
           <td>Answer you when you contact us</td>
           <td>What you send us</td>
           <td>Our legitimate interest in helping you (GDPR 6(1)(f); POPIA 11(1)(f))</td>
+        </tr>
+        <tr>
+          <td>Read and answer the problems and ideas you send</td>
+          <td>Your report, its screenshots, your name and email, the app version and phone
+            (<a href="#reports">3.11</a>)</td>
+          <td>Our legitimate interest in fixing and improving the app, at your request (GDPR
+            6(1)(f); POPIA 11(1)(f))</td>
         </tr>
         <tr>
           <td>Keep records the law requires, such as records of sales for tax</td>
@@ -357,9 +387,15 @@
           <td>Everything described in <a href="#collect">section 3</a></td>
         </tr>
         <tr>
+          <td>Google Cloud Storage</td>
+          <td>Keeping the screenshots sent with a report</td>
+          <td>The screenshots. Stored in Google's European multi-region</td>
+        </tr>
+        <tr>
           <td>Google Cloud Functions</td>
           <td>Our own code on Google's servers. It works out who a notification is for and sends
-            it, runs trials and promo codes, and fetches each farm's weather forecast</td>
+            it, runs trials and promo codes, fetches each farm's weather forecast, tells us when a
+            problem or idea is sent, and deletes a closed account's reports</td>
           <td>The records it needs for that, read from the database. It runs in Belgium, in the
             European Union</td>
         </tr>
@@ -398,7 +434,8 @@
   <h2 id="where">8. Where it is stored</h2>
   <p>The database is Google Cloud Firestore, in Google's European multi-region, which uses data
   centres in the European Union. Information entered on a phone in South Africa is therefore sent
-  to the European Union.</p>
+  to the European Union. Screenshots sent with a report are kept in Google Cloud Storage, in the
+  same European multi-region.</p>
   <ul>
     <li><strong>Out of South Africa.</strong> Section 72 of POPIA allows this when whoever receives
       the information is bound, by law or by a binding agreement, to protect it substantially as
@@ -439,9 +476,12 @@
       moved or deleted.</li>
     <li><strong>Emails you send us:</strong> for as long as we need them to deal with what you
       asked, then deleted.</li>
+    <li><strong>Problems and ideas you send:</strong> until we no longer need them, and in any
+      case they are deleted, with their screenshots, when you delete your account.</li>
   </ul>
-  <p>Anything deleted can stay in Google's backup systems for a limited time before it is
-  overwritten.</p>
+  <p>Anything deleted is removed from Google's systems in stages: at once from the database you
+  use, and from the rest, backups included, as soon as Google reasonably can and within 180 days
+  at most, as Google's terms for Firebase require.</p>
 
   <h2 id="delete">10. Deleting your account</h2>
   <p><strong>In the app:</strong> open <strong>More &rarr; Account Settings &rarr; Delete my
@@ -452,8 +492,9 @@
   <ul>
     <li><strong>Deleted:</strong> your sign-in, your profile (name, email address, phone number,
       photo link and the record of the terms you accepted), your membership of every holding, the
-      notification token of every phone you signed in on, and the record of which phone and
-      computer you're signed in on.</li>
+      notification token of every phone you signed in on, the record of which phone and computer
+      you're signed in on, and the problems and ideas you sent from the app, with their
+      screenshots.</li>
     <li><strong>Kept:</strong> records you made on a holding, with your name on them, because they
       belong to the farm. The records are deleted when the holding is deleted.</li>
     <li><strong>If you own a holding,</strong> you must hand it over or delete it first. A holding
