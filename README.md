@@ -9,6 +9,7 @@ Country Manager app. Plain HTML served by GitHub Pages, with no build step.
 | Privacy Policy | https://empiricalcodelabs.github.io/CountryManagerTnCandPnP/privacy.html |
 | Terms and Conditions | https://empiricalcodelabs.github.io/CountryManagerTnCandPnP/terms.html |
 | Delete your account | https://empiricalcodelabs.github.io/CountryManagerTnCandPnP/delete-account.html |
+| Access to information (PAIA manual) | https://empiricalcodelabs.github.io/CountryManagerTnCandPnP/paia-manual.html |
 
 The privacy policy URL goes into Play Console under App content, Privacy policy.
 The delete-account URL goes under App content, Data deletion.
