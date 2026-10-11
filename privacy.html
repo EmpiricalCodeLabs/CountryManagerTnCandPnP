@@ -23,7 +23,7 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Country Manager &middot; Last updated 10 October 2026 &middot; Version 2026-10-10</p>
+  <p class="meta">Country Manager &middot; Last updated 11 October 2026 &middot; Version 2026-10-11</p>
 
   <p class="lede">This policy explains what the Country Manager app collects, why, who can see it,
   how long it is kept, and what you can ask us to do about it. Country Manager is used on farms in
@@ -38,6 +38,9 @@
         the people you work with type in, and the problems and ideas you choose to send us.</li>
       <li>We don't sell your information, show adverts, or use analytics or tracking tools.</li>
       <li>Records are stored on Google's servers in the European Union.</li>
+      <li>Backups are locked: only a holding's owner and directors can open one. If they switch
+        automatic backups on, our server keeps copies of the holding's records in the European
+        Union. They are off unless someone switches them on.</li>
       <li>Location is used only while the app is open on your screen. Where you go is never
         recorded.</li>
       <li>Notifications are your choice. If you allow them, your phone gets a short line when a
@@ -183,7 +186,9 @@
   <h3>3.6 Files you choose</h3>
   <p>When you import a spreadsheet, the app reads only the file you pick. When you export a
   spreadsheet or a backup, the file is made on your phone and goes wherever you send it. After that
-  it is out of our hands.</p>
+  it is out of our hands. A backup file is locked (see <a href="#protect">section 11</a>): only the
+  owner or a director of the holding it came from can open it, through the app. Backups saved by
+  older versions of the app are not locked: anybody who has one can read it.</p>
 
   <h3>3.7 What your phone sends</h3>
   <p>To work at all, the services the app uses receive some technical information: your IP
@@ -215,6 +220,16 @@
   screenshots you choose to add, your name and email address, the app version, whether it is a
   phone or a computer and its make and model, and the holding you had open and your role on it.
   Only we read it, to fix the app or weigh the idea. Sending one is up to you.</p>
+
+  <h3 id="backups">3.12 Automatic backups</h3>
+  <p>A holding's owner or a director can switch automatic backups on, daily, weekly or monthly.
+  They are off unless someone does. When they are on, our server takes a copy of the holding's
+  records at about two in the morning, South African time. The copy holds what a director of the
+  holding can see. It leaves out to-dos and notices meant only for particular people, and review
+  notes about directors. Each copy is locked like a backup you save (see
+  <a href="#protect">section 11</a>). Only the holding's owner and directors can see the copies,
+  put one back or download one. Our server records who opened which holding's backup, and when.
+  How long the copies are kept is in <a href="#keep">section 9</a>.</p>
 
   <h2 id="location">4. Location and notifications</h2>
 
@@ -277,6 +292,14 @@
           <td>Show each member the records of their holding that they are allowed to see</td>
           <td>Memberships, farm records</td>
           <td>Needed to provide the service, done on the holding's instructions as its processor</td>
+        </tr>
+        <tr>
+          <td>Lock backups, and open them only for a holding's owner and directors. If they switch
+            automatic backups on, take and keep copies of the holding's records
+            (<a href="#backups">3.12</a>)</td>
+          <td>The holding's records; who opened which backup, and when</td>
+          <td>Needed to provide the service, done on the holding's instructions as its
+            processor</td>
         </tr>
         <tr>
           <td>Send you notifications about notices, jobs given to you, to-do reminders, advice and
@@ -389,16 +412,24 @@
         </tr>
         <tr>
           <td>Google Cloud Storage</td>
-          <td>Keeping the screenshots sent with a report</td>
-          <td>The screenshots. Stored in Google's European multi-region</td>
+          <td>Keeping the screenshots sent with a report, and holdings' automatic backups</td>
+          <td>The screenshots, and the automatic backups, locked. Stored in Google's European
+            multi-region</td>
         </tr>
         <tr>
           <td>Google Cloud Functions</td>
           <td>Our own code on Google's servers. It works out who a notification is for and sends
             it, runs trials and promo codes, fetches each farm's weather forecast, tells us when a
-            problem or idea is sent, and deletes a closed account's reports</td>
+            problem or idea is sent, deletes a closed account's reports, takes holdings' automatic
+            backups, and locks and opens backups</td>
           <td>The records it needs for that, read from the database. It runs in Belgium, in the
             European Union</td>
+        </tr>
+        <tr>
+          <td>Google Cloud Key Management Service</td>
+          <td>Keeping the key that locks every backup's own key</td>
+          <td>Each backup's own key, to lock or unlock, never the records. It runs in Belgium, in
+            the European Union, and the key never leaves it</td>
         </tr>
         <tr>
           <td>Google Firebase Cloud Messaging</td>
@@ -435,8 +466,8 @@
   <h2 id="where">8. Where it is stored</h2>
   <p>The database is Google Cloud Firestore, in Google's European multi-region, which uses data
   centres in the European Union. Information entered on a phone in South Africa is therefore sent
-  to the European Union. Screenshots sent with a report are kept in Google Cloud Storage, in the
-  same European multi-region.</p>
+  to the European Union. Screenshots sent with a report, and holdings' automatic backups, are kept
+  in Google Cloud Storage, in the same European multi-region.</p>
   <ul>
     <li><strong>Out of South Africa.</strong> Section 72 of POPIA allows this when whoever receives
       the information is bound, by law or by a binding agreement, to protect it substantially as
@@ -462,7 +493,12 @@
   <ul>
     <li><strong>Your account:</strong> until you delete it (see <a href="#delete">section 10</a>).</li>
     <li><strong>Farm records:</strong> for as long as the holding exists. Its owner decides.
-      Deleting a holding deletes all of its records.</li>
+      Deleting a holding deletes all of its records, and its automatic backups 30 days later.</li>
+    <li><strong>Automatic backups:</strong> the newest 14 daily, 8 weekly or 12 monthly copies,
+      as the holding chooses; each new one replaces the oldest. Switched off, the copies already
+      kept stay until the holding is deleted. When a holding is deleted, its copies are kept for
+      30 days, so that whoever owned it can bring it back, and are then deleted.</li>
+    <li><strong>Who opened a backup:</strong> 30 days, in our server's logs.</li>
     <li><strong>A holding nobody is paying for</strong> becomes read-only. Its records are not
       deleted.</li>
     <li><strong>Records you made on a holding</strong> stay with that holding, with your name on
@@ -515,6 +551,12 @@
     <li>Google's servers check every read and every change against the person's membership and
       role on the holding. A tampered-with copy of the app still cannot open another holding's
       records.</li>
+    <li>Backups are locked. Each backup, whether you save it or our server takes it, is
+      encrypted with a key of its own. That key is locked in turn by a key that never leaves
+      Google's Key Management Service and that only our server can use. The server unlocks a
+      backup only for the owner or a director of the holding it came from, so a lost or forwarded
+      copy gives nothing away, and someone taken off a holding can no longer open the backups
+      they took. A backup that has been changed will not open.</li>
     <li>Invite codes can be made to expire and can be withdrawn.</li>
     <li>Only you can read your phone's notification token. Our server reads it only to send you
       notifications.</li>
