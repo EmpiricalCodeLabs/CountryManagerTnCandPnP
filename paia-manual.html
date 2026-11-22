@@ -23,7 +23,7 @@
 
 <main>
   <h1>Access to Information Manual</h1>
-  <p class="meta">Country Manager &middot; Last updated 29 October 2026 &middot; Version 2026-10-29</p>
+  <p class="meta">Country Manager &middot; Last updated 22 November 2026 &middot; Version 2026-11-22</p>
 
   <p class="lede">This manual is made under section 51 of South Africa's Promotion of Access to
   Information Act 2 of 2000 (PAIA). It tells you what records we hold, and how to ask for them.
@@ -159,9 +159,10 @@
       <tr>
         <td>Users of the app</td>
         <td>Account records; which version of the terms and the privacy policy each user
-          accepted, and when; trials, subscriptions and promo codes; notification tokens; the
-          phone and computer an account is signed in on; problems and ideas sent from the app;
-          emails (sections 3.1, 3.5 and 3.9 to 3.11 of the
+          accepted, and when; trials, subscriptions and promo codes; requests to end a yearly plan
+          early, and refunds; notification tokens; the phone and computer an account is signed in
+          on; problems and ideas sent from the app; the notices sent before a read-only holding or
+          an unused account is deleted; emails (sections 3.1, 3.5, 3.9 to 3.11, 5 and 9 of the
           <a href="privacy.html#collect">Privacy Policy</a>)</td>
       </tr>
       <tr>
@@ -197,14 +198,37 @@
     <li>to sign people in and keep their accounts</li>
     <li>to store, show, export and back up each holding's records for its members, on the
       holding's instructions</li>
-    <li>to send the notifications people allow</li>
+    <li>to send the notifications people allow: notices, jobs given to them, to-do reminders,
+      planned services, machine faults, fuel draws to check, livestock treatments still open,
+      advice and the answers to it, time sheets waiting to be signed, a holding offered to them or
+      their offer answered, and a holding's subscription (including the reminder before a yearly
+      plan renews and the notices before a read-only holding is deleted), and the notices before
+      an unused account is deleted</li>
     <li>to keep each account to one phone and one computer at a time</li>
     <li>to record which terms and policy each person accepted</li>
-    <li>to run trials, subscriptions and promo codes</li>
-    <li>to keep the service secure, stop abuse and fix faults</li>
+    <li>to run trials, subscriptions and promo codes, remind an owner before a yearly plan renews,
+      end a yearly plan early, and refund what is owed</li>
+    <li>to tell a holding's owner and directors, 90, 30 and 7 days before, that a holding
+      read-only for 12 months is to be deleted, and a person that their account, unused for 2
+      years and owning no holding, is to be deleted; and then to delete it (section 9 of the
+      <a href="privacy.html#keep">Privacy Policy</a>)</li>
+    <li>to keep the service secure and stop abuse</li>
+    <li>to find and fix faults (a holding's real records only as section 6.2 of the
+      <a href="privacy.html#see">Privacy Policy</a> says)</li>
+    <li>to test changes to the app, only on a made-up copy of a holding's records, made with the
+      holding owner's agreement and kept for that holding as its operator. In it, every name, ID
+      or passport number, employee number and date of birth is replaced by a made-up one; phone
+      numbers, addresses, notes, typed reasons and all pay are left out. It is never exported or
+      downloaded, never shown outside, and deleted when no longer needed, when the holding is
+      deleted, or when the owner withdraws agreement</li>
+    <li>to count how many people and holdings use the app, as numbers only</li>
     <li>to answer the people who contact us or send a report</li>
     <li>to keep the records that tax law requires</li>
   </ul>
+  <p>Account details and holdings' records are never used to train artificial intelligence (AI),
+  ours or anyone's. We never sell them on their own: if Country Manager itself is sold, they go
+  with it, under the same terms (section 6.3 of the
+  <a href="privacy.html#see">Privacy Policy</a>).</p>
 
   <h3>8.2 Whose information, and what</h3>
   <table>
@@ -213,9 +237,16 @@
       <tr>
         <td>Users of the app</td>
         <td>Name, email address, phone number if given, Google profile photo link, role,
-          memberships, accepted versions of the terms and policy, purchase records (never card or
-          bank details), notification tokens, the make and model of the phone signed in, problem
-          reports</td>
+          memberships, accepted versions of the terms and policy, purchase records (never card
+          details; bank details only for a refund that has to go by bank transfer), requests to
+          end a yearly plan early, and refunds, notification tokens, the make and model of the
+          phone signed in, IP address and browser or device information, problem reports</td>
+      </tr>
+      <tr>
+        <td>People who open the web app or these pages</td>
+        <td>IP address, browser or device information, and what was asked for (Firebase Hosting,
+          gstatic.com, App Check and GitHub Pages; sections 3.7 and 7 of the
+          <a href="privacy.html#collect">Privacy Policy</a>)</td>
       </tr>
       <tr>
         <td>A holding's employees</td>
@@ -237,8 +268,15 @@
   <ul>
     <li>the members of a holding, as far as their role allows
       (section 6.1 of the <a href="privacy.html#see">Privacy Policy</a>)</li>
-    <li>Google, which hosts the service: Firebase Authentication, Cloud Firestore, Cloud
-      Functions, Cloud Storage, Firebase Cloud Messaging and Google Play</li>
+    <li>Google, which hosts the service: Firebase Authentication, App Check (Play Integrity,
+      reCAPTCHA Enterprise), Cloud Firestore, Cloud Functions, Cloud Storage, Cloud Key Management
+      Service, Firebase Hosting and its file servers (gstatic.com), Firebase Cloud Messaging and
+      Google Play</li>
+    <li>Google's Gmail, which we use to send and receive email (notices before a deletion,
+      messages about refunds and ending a yearly plan early, and help), under Google's own
+      privacy policy</li>
+    <li>GitHub, which receives a reader's IP address when it serves the Privacy Policy, the Terms
+      and Conditions, this manual and the account deletion page</li>
     <li>Esri, which receives a phone's IP address when it shows the satellite map</li>
     <li>MET Norway, which receives a point on each farm for the weather forecast, and nothing that
       names a person</li>
@@ -253,7 +291,16 @@
     <li>Google's sign-in service and its notification service may carry information through the
       United States, protected by the European Commission's standard contractual clauses and the
       EU&ndash;US Data Privacy Framework.</li>
+    <li>The web app's files, from Firebase Hosting, and App Check may be handled by Google outside
+      the European Union, under the same clauses and the Data Privacy Framework. The code and
+      fonts the web app loads from gstatic.com come under Google's own privacy policy and the
+      Data Privacy Framework.</li>
+    <li>Email to and from us goes through Google's Gmail, which may handle it outside the
+      European Union, under Google's own privacy policy.</li>
     <li>Map requests go from the phone to Esri, which may handle them in the United States.</li>
+    <li>GitHub, a US company, serves the Privacy Policy, the Terms and Conditions, this manual and
+      the account deletion page, and may handle the request in the United States, under its own
+      privacy statement.</li>
     <li>Weather requests go from our server in the European Union to MET Norway, in the European
       Economic Area.</li>
   </ul>
