@@ -133,6 +133,9 @@
       and we never see it.</li>
     <li>If you sign in with Google: the name, email address and profile photo link on your Google
       account.</li>
+    <li>If you switch on two-step sign-in: that it is on, when you set it up, and the key your
+      codes are checked against. Google's Firebase Authentication holds these. The key is shown
+      only on your own screen while you set it up; we never receive it or your codes.</li>
     <li>Your name, the role you chose when you signed up (director, manager, worker, consultant or
       mechanic), and your phone number if you add one.</li>
     <li>When your account was created and when you last used the app. That date also decides
@@ -643,8 +646,8 @@
       <tbody>
         <tr>
           <td>Google Firebase Authentication</td>
-          <td>Signing in, email verification and password resets</td>
-          <td>Your email address, name, password (stored scrambled, never readable), sign-in tokens, IP address</td>
+          <td>Signing in, email verification, password resets and two-step sign-in</td>
+          <td>Your email address, name, password (stored scrambled, never readable), sign-in tokens, IP address, and if you switch on two-step sign-in, its key and the codes you type</td>
         </tr>
         <tr>
           <td>Google Cloud Firestore</td>
@@ -892,7 +895,12 @@
     <li>An account can be used on one phone and one computer at a time. If your account is ever
       signed in somewhere else, the phone you were using is signed out and tells you where, so
       you can change your password if it wasn't you.</li>
-    <li>Deleting an account requires a fresh password or Google sign-in.</li>
+    <li>You can switch on two-step sign-in in Account Settings. Signing in then also asks for a
+      code from an authenticator app, so a password that has leaked is not enough on its own.
+      Switching it off asks you to confirm it is you, then for a code. If you sign in with
+      Google, confirming on your own phone asks for no password, so keep your phone locked.</li>
+    <li>Deleting an account requires a fresh password or Google sign-in, and the code as well if
+      two-step sign-in is on.</li>
     <li>The app proves to our servers that it is the real Country Manager app (App Check, see
       <a href="#collect">section 3.7</a>).</li>
     <li>Your phone, or the browser you use, holds a copy of the records you open (see
