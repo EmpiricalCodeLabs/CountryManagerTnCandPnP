@@ -303,6 +303,11 @@
   working without signal. It also remembers some settings, such as how the map opens. Signing
   out does not remove the copy of the records. It stays until the app is uninstalled or its
   storage is cleared in Android's settings.</p>
+  <p>The app keeps this copy and its settings out of Android's own backup to your Google
+  account, and out of copying from an old phone to a new one. Versions before 3.7.0 did not:
+  if your phone backed up apps to your Google account, that backup may hold the copy of the
+  records you had opened, kept under your own Google account until Google deletes it. Version
+  3.7.0 and later never read such a backup back.</p>
   <p><strong>In a web browser,</strong> the app keeps a copy of the records you open in the
   browser's storage while you are signed in, and asks the browser to keep it. The copy is cleared
   when you sign out (the page loads again), and at the latest the next time the app starts with
