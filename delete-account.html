@@ -23,7 +23,7 @@
 
 <main>
   <h1>Delete your Country Manager account</h1>
-  <p class="meta">Country Manager, by EmpiricalCodeLabs &middot; Last updated 2 October 2026</p>
+  <p class="meta">Country Manager, by EmpiricalCodeLabs &middot; Last updated 25 November 2026 &middot; Version 2026-11-25</p>
 
   <p class="lede">You can delete your Country Manager account yourself in the app, or ask us to
   delete it by email if you can't get into the app. To remove only some of your data and keep
@@ -34,7 +34,8 @@
     <li>Open Country Manager and tap <strong>More</strong>, at the bottom of the screen.</li>
     <li>Tap <strong>Account Settings</strong>.</li>
     <li>Under <strong>Close this account</strong>, tap <strong>Delete my account</strong>.</li>
-    <li>Confirm with your password, or sign in with Google again if that is how you sign in.</li>
+    <li>Confirm with your password, or sign in with Google again if that is how you sign in. If
+      you switched on two-step sign-in, type the code from your authenticator app as well.</li>
   </ol>
 
   <h2 id="by-email">Without the app</h2>
@@ -55,14 +56,19 @@
     <li><strong>If you pay for a subscription,</strong> cancel it in Google Play under
       <strong>Payments and subscriptions &rarr; Subscriptions</strong>. Deleting your account does
       not cancel it.</li>
-    <li><strong>If you want a copy of your farm's records,</strong> a director or manager can take a
-      backup from the app first.</li>
+    <li><strong>If you want a copy of your farm's records,</strong> take it first. The owner, a
+      director or a manager can take a backup from the app; only the owner and directors can open
+      one, through the app. Once a holding is deleted, only whoever owned it when a backup was
+      taken can open that backup, so directors and others should save the unlocked copy or the
+      exports instead. The owner or a director can save an unlocked copy: a zip file of JSON files
+      holding all the holding's records they can see, which can be read with ordinary software.
+      Anybody who has the file can read it, so keep it safe.</li>
     <li><strong>If your holding keeps staff records,</strong> take them before you delete it.
       Employment records must be kept for three years after the last entry, and pay records for
       five, also after the farm stops using Country Manager. Deleting the holding deletes them.
-      Take a backup (Menu &rarr; Backup), the register (HR &rarr; the menu &rarr; Export register)
-      and the wages register (HR &rarr; Payroll &rarr; the menu &rarr; Wages register) first. The
-      app reminds you when you delete it.</li>
+      Take a backup or the unlocked copy (More &rarr; Backup), the register (HR &rarr; the menu
+      &rarr; Export register) and the wages register (HR &rarr; Payroll &rarr; the menu &rarr;
+      Wages register) first. The app reminds you when you delete it.</li>
   </ul>
 
   <h2 id="what">What is deleted, and what is kept</h2>
@@ -78,6 +84,7 @@
                 the terms you accepted</li>
               <li>your membership of every holding you belong to</li>
               <li>the notification token of every phone you signed in on</li>
+              <li>your alert choices</li>
               <li>the record of which phone and computer your account is in use on</li>
               <li>the problems and ideas you sent from the app, with their screenshots</li>
             </ul>
@@ -86,9 +93,13 @@
             <ul>
               <li>records you made on a holding, such as field work, stock counts or notice board
                 posts, with your name on them. They belong to the farm and stay until the farm
-                deletes them or its holding.</li>
+                deletes them or its holding is deleted (by its owner, or after 12 months
+                read-only).</li>
               <li>records of subscription purchases, for seven years, as Dutch tax law
                 requires</li>
+              <li>any request to end a yearly plan early, and its refund, for seven years, with
+                our books</li>
+              <li>the emails we sent before a deletion, for three years after it</li>
             </ul>
           </td>
         </tr>
@@ -98,6 +109,27 @@
   <p>Deleted information is removed from Google's backups as soon as Google reasonably can, and
   within 180 days at most, as Google's terms for Firebase require. The
   <a href="privacy.html#keep">Privacy Policy</a> explains how long we keep things.</p>
+
+  <h2 id="unused">If you stop using Country Manager</h2>
+  <ul>
+    <li><strong>An account</strong> nobody has used for 2 years (not opened or signed in to
+      anywhere) that owns no holding is deleted, as above. We email you 90, 30 and 7 days before,
+      and send a notification where your phone can still be reached. Using the app again stops it.
+      Records you made on a holding stay with the farm.</li>
+    <li><strong>A holding</strong> that has been read-only for 12 months, because nobody is paying
+      for it, is deleted with all its records. Its owner and directors are told 90, 30 and 7 days
+      before, by email, by a notification and by a banner in the app. Each notice reminds them to
+      take a backup, the unlocked copy or the exports, and the first says that our earlier
+      promise, that a holding would never be deleted for not being paid for, is withdrawn.
+      Subscribing, redeeming a promo code, or a director taking the holding over stops it. Taking
+      a backup or an unlocked copy does not, so take what the farm must keep before then: records
+      not taken out by the day it is deleted are gone (<a href="terms.html#records">section 7 of
+      the Terms and Conditions</a>). After that, only whoever owned the holding
+      when a backup was taken can open that backup. Its automatic backups are deleted 30 days
+      later.</li>
+  </ul>
+  <p>No time before these rules were first published counts towards the 12 months or the 2
+  years.</p>
 
   <h2 id="some-data">Delete some of your data, and keep your account</h2>
   <p>You don't have to close your account to remove information from Country Manager. In the app:</p>

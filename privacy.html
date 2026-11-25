@@ -23,7 +23,7 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Country Manager &middot; Last updated 5 November 2026 &middot; Version 2026-11-05</p>
+  <p class="meta">Country Manager &middot; Last updated 25 November 2026 &middot; Version 2026-11-25</p>
 
   <p class="lede">This policy explains what the Country Manager app collects, why, who can see it,
   how long it is kept, and what you can ask us to do about it. Country Manager is used on farms in
@@ -36,19 +36,35 @@
     <ul>
       <li>We collect what the app needs to work: your account details, the farm records you and
         the people you work with type in, and the problems and ideas you choose to send us.</li>
-      <li>We don't sell your information, show adverts, or use analytics or tracking tools.</li>
+      <li>We don't show adverts, or use analytics or tracking tools (the web app's security check,
+        <a href="#collect">3.7</a>, only tells a person from a bot).</li>
+      <li>Your account details and a farm's records are never used to train artificial
+        intelligence (AI), ours or anyone's. We never sell them on their own: if Country Manager
+        itself is sold, they go with it, under this policy. We use a farm's records to run the
+        service and to find and fix faults, and we test changes only on a made-up copy, made with
+        the holding owner's agreement (<a href="#see">section 6.2</a>).</li>
       <li>Records are stored on Google's servers in the European Union.</li>
       <li>A farm that uses the HR section can keep its employees' working times, time sheets and
         pay there. Only the farm's owner and directors see anybody's pay.</li>
       <li>Backups are locked: only a holding's owner and directors can open one. If they switch
         automatic backups on, our server keeps copies of the holding's records in the European
-        Union. They are off unless someone switches them on.</li>
+        Union. They are off unless someone switches them on. The owner or a director can also
+        save an unlocked copy, which can be read with ordinary software
+        (<a href="#collect">section 3.6</a>).</li>
       <li>Location is used only while the app is open on your screen. Where you go is never
         recorded.</li>
       <li>Notifications are your choice. If you allow them, your phone gets a short line when a
-        notice goes up, a job is given to you, a to-do falls due, advice comes in or yours is
-        answered, a holding is offered to you or your offer is answered, or a holding's
-        subscription needs you.</li>
+        notice goes up, a job is given to you, a to-do falls due, a planned service falls due, a
+        machine has a fault, a fuel draw needs checking, a livestock treatment is still open, a
+        worker's treatment waits for you to approve what came off the store,
+        advice comes in or yours is answered, time sheets wait to be signed, a holding is offered
+        to you or your offer is answered, a holding's subscription needs you (also before a
+        yearly plan renews, and before a read-only holding is deleted), or your account is about
+        to be deleted for not being used. You choose which kinds you get, in the app, apart from those that
+        always come (<a href="#notifications">section 4.2</a>).</li>
+      <li>A holding that has been read-only for 12 months is deleted with its records, and so is
+        an account nobody has used for 2 years that owns no holding. Notices come first, 90, 30
+        and 7 days before (<a href="#keep">section 9</a>).</li>
       <li>You can delete your account in the app, or <a href="delete-account.html">ask us to
         delete it</a>.</li>
     </ul>
@@ -102,7 +118,11 @@
       that owns the holding decides what is recorded and who may see it. That makes the holding's
       owner the controller (the responsible party, in POPIA's words) for those records. We store
       and process them for the holding as its <em>processor</em> (its <em>operator</em>, in
-      POPIA's words), and use them for nothing else. The terms we work under are in
+      POPIA's words). We use them only to provide the service (storing, showing, exporting,
+      backing up, returning and deleting the records) and to find and fix faults and test changes,
+      as <a href="#see">section 6.2</a> says. We never use them to train AI, and never sell them on
+      their own: if Country Manager itself is sold, they go with it, under the same terms. The
+      terms we work under are in
       <a href="terms.html#operator">section 9 of the Terms and Conditions</a>.</li>
   </ul>
 
@@ -114,9 +134,13 @@
       and we never see it.</li>
     <li>If you sign in with Google: the name, email address and profile photo link on your Google
       account.</li>
+    <li>If you switch on two-step sign-in: that it is on, when you set it up, and the key your
+      codes are checked against. Google's Firebase Authentication holds these. The key is shown
+      only on your own screen while you set it up; we never receive it or your codes.</li>
     <li>Your name, the role you chose when you signed up (director, manager, worker, consultant or
       mechanic), and your phone number if you add one.</li>
-    <li>When your account was created and when you last used the app.</li>
+    <li>When your account was created and when you last used the app. That date also decides
+      whether an unused account is deleted (<a href="#keep">section 9</a>).</li>
     <li>Which version of the Terms and Conditions and of this Privacy Policy you accepted, and
       when.</li>
     <li>Which cards and buttons you chose for your dashboard on each holding. Only you can see
@@ -124,6 +148,8 @@
     <li>Which of the app's short tours you have seen, closed or been offered, whether you were
       shown the note about them, and whether you switched tour offers off or asked to see the
       tours again in Account settings. Only you can see this.</li>
+    <li>Which kinds of notification you switched off in the app
+      (<a href="#notifications">section 4.2</a>). Only you can see this.</li>
     <li>If you open the app's HR section: that you acknowledged its notice that checking HR,
       and complying with labour and tax law, is the farm's responsibility; which version of
       the notice, when you first acknowledged it, and whether you asked not to see it again.
@@ -228,32 +254,70 @@
   <p>If you buy a subscription, Google Play takes the payment. We receive a record of the purchase
   so we can tell which holdings are paid for. It shows the plan, the order number, a purchase token
   from Google, the dates, and whether it is active, cancelled or refunded. We never see your card
-  or bank details.</p>
+  details. If you ask to end a yearly plan early, or a refund is owed, we keep your request, our
+  answer and the refund (<a href="#keep">section 9</a>). A refund goes through Google Play, or by
+  bank transfer if Google Play can't; only then do we receive the bank details you give us for
+  it.</p>
 
   <h3>3.6 Files you choose</h3>
   <p>When you import a spreadsheet, the app reads only the file you pick. When you export a
-  spreadsheet or a backup, the file is made on your phone and goes wherever you send it. After that
-  it is out of our hands. A backup file is locked (see <a href="#protect">section 11</a>): only the
-  owner or a director of the holding it came from can open it, through the app. Backups saved by
-  older versions of the app are not locked: anybody who has one can read it.</p>
+  spreadsheet or a backup, the file is made on your phone or computer and goes wherever you send
+  it. After that it is out of our hands. A backup file is locked (see
+  <a href="#protect">section 11</a>): only the owner or a director of the holding it came from can
+  open it, through the app. Backups saved by older versions of the app are not locked: anybody who
+  has one can read it. Once a holding is deleted, only whoever owned it when a backup was taken
+  can open that backup. Directors and others who will want the records after that should save the
+  unlocked copy or the exports first.</p>
+  <p>A holding's owner or a director can also save an <strong>unlocked copy</strong>: a zip file
+  of JSON files holding all the holding's records that the person saving it can see. It can be
+  read with ordinary software. It is not locked. Anybody who has the file can read it, ID numbers
+  and pay included, so keep it safe.</p>
   <p>Payslips, the wages register, the figures for the farm's accountant (among them, for the
   Employment Tax Incentive, employees' dates of birth and ID numbers), the register for a payroll
   bureau, a crew sheet and the documents made for an employee (their written particulars and
-  certificate of service) are made on the phone as PDF files, spreadsheets or a zip, and go
-  wherever they are sent. Those that hold pay or ID numbers say &ldquo;Confidential&rdquo; on
-  them.</p>
+  certificate of service) are made on the phone or computer as PDF files, spreadsheets or a zip,
+  and go wherever they are sent. Those that hold pay or ID numbers say &ldquo;Confidential&rdquo;
+  on them.</p>
 
-  <h3>3.7 What your phone sends</h3>
+  <h3>3.7 What your phone or browser sends</h3>
   <p>To work at all, the services the app uses receive some technical information: your IP
   address, the app version, and the tokens that keep you signed in. We don't use analytics,
   advertising or crash-reporting tools. We don't build a profile of how you use the app.</p>
+  <ul>
+    <li><strong>App Check.</strong> The app proves to our servers that it is the real Country
+      Manager app, through Google's Firebase App Check. On Android it uses Google Play Integrity,
+      which tells Google about the phone and the app on it. In a web browser it uses Google's
+      reCAPTCHA Enterprise, which stores a cookie and reads information about the browser and
+      device, to tell a person from a bot. It is a security check, not tracking. Both work under
+      Google's terms.</li>
+    <li><strong>The web app.</strong> Its files come from Google's Firebase Hosting. The code that
+      connects it to our servers (Google's Firebase SDK), and its fonts, come from gstatic.com,
+      which Google serves under its own privacy policy. Each of them receives your IP address.</li>
+    <li><strong>These pages.</strong> The Privacy Policy, the Terms and Conditions and our other
+      legal pages are on GitHub Pages. GitHub receives your IP address when you open one, also
+      when you open it from the app.</li>
+  </ul>
 
-  <h3>3.8 What stays on your phone</h3>
-  <p>The app keeps a copy of the records you open on the phone, so it keeps working without
-  signal. It also remembers settings such as the farm you last had open. Signing out does not
-  remove that copy. It stays until the app is uninstalled or its storage is cleared in Android's
-  settings. On the phone of a holding's owner or a director, that copy includes the pay records
-  they have opened.</p>
+  <h3>3.8 What stays on your phone or computer</h3>
+  <p><strong>On a phone,</strong> the app keeps a copy of the records you open, so it keeps
+  working without signal. It also remembers some settings, such as how the map opens. Signing
+  out does not remove the copy of the records. It stays until the app is uninstalled or its
+  storage is cleared in Android's settings.</p>
+  <p>The app keeps this copy and its settings out of Android's own backup to your Google
+  account, and out of copying from an old phone to a new one. Versions before 3.7.0 did not:
+  if your phone backed up apps to your Google account, that backup may hold the copy of the
+  records you had opened, kept under your own Google account until Google deletes it. Version
+  3.7.0 and later never read such a backup back.</p>
+  <p><strong>In a web browser,</strong> the app keeps a copy of the records you open in the
+  browser's storage while you are signed in, and asks the browser to keep it. The copy is cleared
+  when you sign out (the page loads again), and at the latest the next time the app starts with
+  nobody signed in.
+  Some settings, such as how the map opens, and the lots written down in the auction calculator
+  stay in the browser until its data for this site is cleared. The browser also keeps the app's
+  own files, so that it can start without signal; they hold no records. On a computer that other
+  people use, sign out when you are done.</p>
+  <p>On the phone or computer of a holding's owner or a director, the copy includes the pay
+  records they have opened.</p>
 
   <h3>3.9 Your phone, if you allow notifications</h3>
   <p>A token from Google's Firebase Cloud Messaging that lets our server reach the app on your
@@ -263,9 +327,10 @@
   <h3 id="devices">3.10 Which phone you're signed in on</h3>
   <p>An account can be used on one phone and one computer at a time. When you sign in on a
   second phone, the app tells you which phone has your account and asks whether to move it; if
-  you say yes, the other phone is signed out. For that, we keep for your phone (and, later, your
-  computer): its make and model as Android reports them, such as &ldquo;Samsung SM-A145F&rdquo;;
-  an id the app makes up when it is installed; when it was signed in; and when the app was last
+  you say yes, the other phone is signed out. For that, we keep for your phone and your computer:
+  a phone's make and model as Android reports them, such as &ldquo;Samsung SM-A145F&rdquo;, and
+  for a computer only the word &ldquo;Computer&rdquo;; an id the app makes up when it is
+  installed, or first opened in a browser; when it was signed in; and when the app was last
   opened on it, to within an hour. Only you can see this, when you sign in somewhere else.
   Signing out removes it.</p>
 
@@ -327,19 +392,42 @@
       makes no notification token for your phone, and nothing about your phone is sent to us for
       notifications. You can turn them off later, all of them or one kind at a time, in Android's
       settings. The app's Account screen takes you there.</li>
+    <li><strong>Choosing which kinds.</strong> You can also choose in the app which kinds reach
+      your phones (<strong>More &rarr; Account Settings &rarr; Choose your alerts</strong>). Your
+      choice is kept on your account, so every phone you use hears the same. Only you can see it,
+      and it is deleted with your account. Some always come, whatever you choose: an offer of a
+      holding or the answer to yours, a holding's subscription notices (including the reminder
+      before a yearly plan renews and the notices before a read-only holding is deleted), the
+      notices before an unused account is deleted, and a notice its writer marked as
+      important.</li>
     <li><strong>What we keep:</strong> the token that lets our server reach the app on your phone,
       with your account's id and when it was last registered. There is one for each phone. When
       somebody else signs in on the same phone, it becomes theirs, and signing out removes it.</li>
     <li><strong>What a notification says:</strong> which holding it is about, and one line. That
       is who put up a notice and what it says, the name of a job given to you or falling due, or
-      the title of a piece of advice and who wrote it. You are only ever sent a notification about
-      a record you can already see in the app.</li>
+      the title of a piece of advice and who wrote it. It may also be a planned service on a
+      vehicle that falls due or is still open, with the vehicle and the work; a fault reported on
+      a machine, or left open, with the machine, how urgent it is and who reported it; a fuel draw
+      whose reading or litres can't be right, with who recorded it, the vehicle, the litres and
+      what is wrong; a livestock treatment you are to be reminded of that is still open in the
+      morning, with its name and the mob or the animals' tags; or, for an owner, director or
+      manager, a treatment a worker gave of a product kept in the store, waiting for them to
+      approve what came off it, with the worker's name, the treatment and product, how many
+      animals and the mob. You are only ever sent a
+      notification about a record you can already see in the app.</li>
     <li><strong>Also:</strong> an adviser hears the farm's answer to their advice (accepted,
       declined or marked done, with the farm's note). For a holding's subscription, its owner and
       directors get a daily reminder while its free time runs out, while nobody is paying for it,
-      and while it is read-only, and its owner hears once the day subscriptions start. When a
-      holding is handed over, the person it is offered to hears of the offer, and the owner who
-      offered it hears their answer.</li>
+      and for its first 7 days read-only, and its owner hears once the day subscriptions start. Before a
+      yearly plan renews, its owner gets a reminder, 40 to 80 business days before the year ends,
+      with the renewal date, the price after renewal when Google Play has told us it (otherwise
+      where Google Play shows it), and the choice to cancel in Google Play or to end the plan early
+      (<a href="terms.html#yearly">Terms and Conditions, section 6.11</a>).
+      Before a holding that has been read-only for 12 months is deleted, its owner and directors
+      get a notice 90, 30 and 7 days before. Before an account nobody has used for 2 years is
+      deleted, the person whose account it is gets a notice at the same times, if their phone can
+      still be reached. When a holding is handed over, the person it is offered to hears of the
+      offer, and the owner who offered it hears their answer.</li>
     <li><strong>Reminders.</strong> If a job has a due date or a reminder time, our server keeps
       when it should remind you until the reminder is sent, or the job is done or deleted.</li>
     <li><strong>Time sheets.</strong> If a farm has its workers sign their time sheets, its
@@ -377,10 +465,15 @@
             processor</td>
         </tr>
         <tr>
-          <td>Send you notifications about notices, jobs given to you, to-do reminders, advice and
-            the answers to it, a holding offered to you or your offer answered, and a holding's
-            subscription</td>
-          <td>Your phone's notification token; the record the notification is about</td>
+          <td>Send you notifications about notices, jobs given to you, to-do reminders, planned
+            services, machine faults, fuel draws to check, livestock treatments still open,
+            treatments to approve, advice
+            and the answers to it, time sheets waiting to be signed, a holding offered to you or
+            your offer answered, and a holding's subscription (including the reminder before a
+            yearly plan renews and the notices before a read-only holding is deleted), and the
+            notices before an unused account is deleted</td>
+          <td>Your phone's notification token; the record the notification is about; the kinds
+            you switched off</td>
           <td>Needed to provide the service you asked for by allowing notifications (GDPR 6(1)(b);
             POPIA 11(1)(b)). The records are the holding's, used on its instructions as its
             processor</td>
@@ -414,14 +507,63 @@
           <td>Our legitimate interest in being able to show what was agreed (GDPR 6(1)(f); POPIA 11(1)(f))</td>
         </tr>
         <tr>
-          <td>Run trials, subscriptions, promo codes and payment reminders</td>
-          <td>Purchase records, who owns each holding</td>
-          <td>Needed to perform the subscription agreement (GDPR 6(1)(b); POPIA 11(1)(b))</td>
+          <td>Run trials, subscriptions, promo codes and payment reminders; remind an owner before
+            a yearly plan renews; end a yearly plan early, and refund what is owed
+            (<a href="terms.html#refunds">sections 6.10</a> and
+            <a href="terms.html#yearly">6.11 of the Terms and Conditions</a>)</td>
+          <td>Purchase records, who owns each holding; requests to end a yearly plan early, and
+            refunds, with the bank details given for a refund that has to go by bank transfer
+            (<a href="#collect">3.5</a>)</td>
+          <td>Needed to perform the subscription agreement (GDPR 6(1)(b); POPIA 11(1)(b)). The
+            reminder before a yearly plan renews is also a duty under South African law (POPIA
+            11(1)(c))</td>
         </tr>
         <tr>
-          <td>Keep the service secure, stop abuse, and fix faults</td>
-          <td>Technical information; records only as far as a fault needs</td>
+          <td>Keep the service secure and stop abuse, App Check included
+            (<a href="#collect">3.7</a>)</td>
+          <td>Technical information</td>
           <td>Our legitimate interest in a working, safe service (GDPR 6(1)(f); POPIA 11(1)(f))</td>
+        </tr>
+        <tr>
+          <td>Find and fix faults, and test changes to the app (<a href="#see">6.2</a>)</td>
+          <td>Technical information; a holding's real records only as
+            <a href="#see">section 6.2</a> says; for testing changes, only a made-up copy of a
+            holding's records, made with its owner's agreement</td>
+          <td>For a holding's records and its made-up copy: done as its processor, on its
+            instructions (<a href="terms.html#operator">section 9 of the Terms and
+            Conditions</a>). For account details and technical information: our legitimate
+            interest in a working service (GDPR 6(1)(f); POPIA 11(1)(f))</td>
+        </tr>
+        <tr>
+          <td>Count how many people and holdings use the app, as numbers only</td>
+          <td>Account details and memberships, counted</td>
+          <td>Our legitimate interest in knowing how far the service is used (GDPR 6(1)(f); POPIA
+            11(1)(f))</td>
+        </tr>
+        <tr>
+          <td>Serve the web app, and publish this policy and our other legal pages
+            (<a href="#collect">3.7</a>)</td>
+          <td>Your IP address and the request (Firebase Hosting, gstatic.com, GitHub Pages)</td>
+          <td>For the web app: needed to provide it (GDPR 6(1)(b); POPIA 11(1)(b)). For the legal
+            pages: our legitimate interest in publishing them (GDPR 6(1)(f); POPIA 11(1)(f))</td>
+        </tr>
+        <tr>
+          <td>Tell a holding's owner and directors before a holding that has been read-only for 12
+            months is deleted, and tell a person before their account, unused for 2 years and
+            owning no holding, is deleted; then delete it (<a href="#keep">section 9</a>)</td>
+          <td>Name, email address, who owns the holding and who its directors are, when the
+            holding became read-only, and when the account was last used</td>
+          <td>The notices: needed to perform the agreement (<a href="terms.html#records">sections
+            7</a> and <a href="terms.html#ending">15 of the Terms and Conditions</a>; GDPR
+            6(1)(b); POPIA 11(1)(b)). The deletion: keeping nothing longer than it is needed (GDPR
+            article 5(1)(e); POPIA section 14)</td>
+        </tr>
+        <tr>
+          <td>Keep the emails we sent before a deletion, for three years after it</td>
+          <td>The emails: to whom, when and what they said</td>
+          <td>Our legitimate interest in being able to show that they went, for as long as a claim
+            about the deletion could be brought: three years, as in section 11(d) of South
+            Africa's Prescription Act 68 of 1969 (GDPR 6(1)(f); POPIA 11(1)(f))</td>
         </tr>
         <tr>
           <td>Answer you when you contact us</td>
@@ -437,7 +579,7 @@
         </tr>
         <tr>
           <td>Keep records the law requires, such as records of sales for tax</td>
-          <td>Purchase records</td>
+          <td>Purchase records; requests to end a yearly plan early, and refunds</td>
           <td>A legal obligation (GDPR 6(1)(c); POPIA 11(1)(c))</td>
         </tr>
       </tbody>
@@ -446,7 +588,8 @@
   <p>We don't use your information for marketing or advertising. We don't profile you, and
   nothing about you is decided by the app alone: the app works out pay and flags what it finds
   against labour law, but people decide, and the farm checks each payslip before making it final.
-  We don't sell or rent your information to anyone.</p>
+  We never sell or rent your information on its own (<a href="#see">section 6.3</a>). Neither your
+  account details nor a farm's records are ever used to train AI, ours or anyone's.</p>
 
   <h2 id="see">6. Who can see it</h2>
 
@@ -471,9 +614,28 @@
   records.</p>
 
   <h3>6.2 Us</h3>
-  <p>As the developer, we can reach the database through Google's console. We look at a holding's
-  records only when its owner or a member asks us for help, to fix a fault, or when the law
-  requires it.</p>
+  <p>As the developer, we can reach the database through our own sign-in (the Firebase
+  command-line tools). We look at a holding's real records only:</p>
+  <ul>
+    <li>when its owner or a member asks us for help</li>
+    <li>to find and fix a fault that was reported to us or that our checks found</li>
+    <li>when the law requires it</li>
+  </ul>
+  <p>Checks we run over the records report what is wrong, not who it is about. We also count how
+  many people and holdings use the app, as numbers only.</p>
+  <p>We test changes to the app only on a made-up copy of a holding's records, which may also help
+  us find faults. We make one only with the holding owner's agreement. In the copy, every name, ID
+  or passport number, employee number and date of birth is replaced by a made-up one; phone
+  numbers, addresses, notes, typed reasons and all pay are left out. The copy is still the
+  holding's information, and we keep it for that holding, as its processor, in a holding that
+  only our own account belongs to, in the same database with the same protection. It is used for
+  nothing else, is never exported or downloaded, and is never shown outside (in a video, a
+  published screenshot or the app's store listing). It is deleted when it is no longer needed,
+  when the holding it came from is deleted, or when the owner withdraws their agreement.</p>
+  <p>Your account details and a holding's records are never used to train AI, ours or anyone's.
+  They are never shown to another holding, except what the holding itself shares (its rain, see
+  <a href="#rain">section 3.13</a>). We never sell them on their own: if Country Manager itself is
+  sold, they go with it, under this policy (<a href="#see">section 6.3</a>).</p>
 
   <h3>6.3 Anyone else</h3>
   <ul>
@@ -483,8 +645,9 @@
       names.</li>
     <li>An authority or court that has the legal power to demand it. We will tell you, unless the
       law forbids us.</li>
-    <li>If Country Manager is sold or passed to someone else, your information would go with it,
-      still under this policy. We would tell you first.</li>
+    <li>If Country Manager itself is sold or passed to someone else, your information would go
+      with it, still under this policy. We would tell you first, and give each holding's owner
+      time to take its records or close the holding.</li>
   </ul>
 
   <h2 id="providers">7. Services we use</h2>
@@ -494,8 +657,8 @@
       <tbody>
         <tr>
           <td>Google Firebase Authentication</td>
-          <td>Signing in, email verification and password resets</td>
-          <td>Your email address, name, password (stored scrambled, never readable), sign-in tokens, IP address</td>
+          <td>Signing in, email verification, password resets and two-step sign-in</td>
+          <td>Your email address, name, password (stored scrambled, never readable), sign-in tokens, IP address, and if you switch on two-step sign-in, its key and the codes you type</td>
         </tr>
         <tr>
           <td>Google Cloud Firestore</td>
@@ -511,11 +674,17 @@
         <tr>
           <td>Google Cloud Functions</td>
           <td>Our own code on Google's servers. It works out who a notification is for and sends
-            it, runs trials and promo codes, fetches each farm's weather forecast, tells us when a
-            problem or idea is sent, deletes a closed account's reports, takes holdings' automatic
-            backups, locks and opens backups, checks time-sheet PINs, records signatures and the
-            days a worker marks as not right, shows a worker their own time sheet, and sends
-            time-sheet reminders</td>
+            it: notices, jobs given to you, to-do reminders, planned services, machine faults, fuel
+            draws to check, livestock treatments still open, treatments to approve, advice and
+            the answers to it, time
+            sheets waiting to be signed, a holding offered to you or your offer answered, and a
+            holding's subscription (including the reminder before a yearly plan renews and the
+            notices before a read-only holding is deleted), and the notices before an unused
+            account is deleted. It also runs trials and promo codes, fetches each farm's weather
+            forecast, tells us when a problem or idea is sent, deletes a closed account's reports,
+            takes holdings' automatic backups, locks and opens backups, checks time-sheet PINs,
+            records signatures and the days a worker marks as not right, and shows a worker their
+            own time sheet</td>
           <td>The records it needs for that, read from the database. It runs in Belgium, in the
             European Union</td>
         </tr>
@@ -529,6 +698,34 @@
           <td>Google Firebase Cloud Messaging</td>
           <td>Delivering notifications to your phone</td>
           <td>Your phone's notification token, and the text of each notification</td>
+        </tr>
+        <tr>
+          <td>Google Firebase App Check (Google Play Integrity, reCAPTCHA Enterprise)</td>
+          <td>Letting the app prove to our servers that it is the real Country Manager app
+            (<a href="#collect">3.7</a>)</td>
+          <td>On Android, through Play Integrity, information about the phone and the app on it.
+            In a web browser, through reCAPTCHA Enterprise, information about the browser and
+            device, to tell a person from a bot; it stores a cookie in the browser. Under Google's
+            terms</td>
+        </tr>
+        <tr>
+          <td>Google Firebase Hosting and gstatic.com</td>
+          <td>Serving the web app's files, the code that connects it to our servers, and its fonts</td>
+          <td>Your IP address and what your browser asks for. Google serves gstatic.com under its
+            own privacy policy</td>
+        </tr>
+        <tr>
+          <td>Google Gmail</td>
+          <td>Sending and receiving our email: the notices before a deletion, messages about ending
+            a yearly plan early and refunds, and our answers when you ask for help</td>
+          <td>Your email address, your name and what the emails say, under Google's own privacy
+            policy</td>
+        </tr>
+        <tr>
+          <td>GitHub Pages</td>
+          <td>Publishing this policy, the Terms and Conditions and our other legal pages</td>
+          <td>A reader's IP address and the page asked for, under GitHub's own privacy
+            statement</td>
         </tr>
         <tr>
           <td>Google Play</td>
@@ -554,8 +751,10 @@
   keep the information confidential and secure, and to use it only to provide its service. See
   <a href="https://policies.google.com/privacy">Google's privacy policy</a>,
   <a href="https://firebase.google.com/support/privacy">Firebase's privacy and security page</a>,
-  <a href="https://www.esri.com/en-us/privacy/overview">Esri's privacy statement</a> and
-  <a href="https://api.met.no/doc/TermsOfService">MET Norway's terms of service</a>.</p>
+  <a href="https://www.esri.com/en-us/privacy/overview">Esri's privacy statement</a>,
+  <a href="https://api.met.no/doc/TermsOfService">MET Norway's terms of service</a> and
+  <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's
+  privacy statement</a>.</p>
 
   <h2 id="where">8. Where it is stored</h2>
   <p>The database is Google Cloud Firestore, in Google's European multi-region, which uses data
@@ -581,13 +780,26 @@
       Google's Firebase Cloud Messaging, which may carry them through servers outside it. Google
       protects such transfers with the same standard contractual clauses and the EU&ndash;US Data
       Privacy Framework.</li>
+    <li><strong>The web app and App Check.</strong> Google may handle the web app's files, from
+      Firebase Hosting, and App Check (<a href="#collect">3.7</a>) outside the European Union.
+      Google protects such transfers with the same standard contractual clauses and the
+      EU&ndash;US Data Privacy Framework. The code and fonts the web app loads from gstatic.com
+      come under Google's own privacy policy and the EU&ndash;US Data Privacy Framework.</li>
+    <li><strong>Email</strong> to and from us goes through Google's Gmail, which may handle it
+      outside the European Union, under Google's own privacy policy.</li>
+    <li><strong>These legal pages</strong> are served by GitHub, a US company, which may handle
+      the request in the United States, under its own privacy statement.</li>
   </ul>
 
   <h2 id="keep">9. How long we keep it</h2>
   <ul>
-    <li><strong>Your account:</strong> until you delete it (see <a href="#delete">section 10</a>).</li>
-    <li><strong>Farm records:</strong> for as long as the holding exists. Its owner decides.
-      Deleting a holding deletes all of its records, and its automatic backups 30 days later.</li>
+    <li><strong>Your account:</strong> until you delete it, or until nobody has used it for 2
+      years while it owns no holding: then it is deleted, after notices (see
+      <a href="#delete">section 10</a>). No time before this rule was first published counts
+      towards the 2 years, or towards the 12 months below.</li>
+    <li><strong>Farm records:</strong> for as long as the holding exists: until its owner deletes
+      it, or until it is deleted after 12 months read-only, after notices (below). Deleting a
+      holding deletes all of its records, and its automatic backups 30 days later.</li>
     <li><strong>Automatic backups:</strong> the newest 14 daily, 8 weekly or 12 monthly copies,
       as the holding chooses; each new one replaces the oldest. Switched off, the copies already
       kept stay until the holding's owner or a director deletes them, or the holding is deleted.
@@ -598,8 +810,18 @@
       was for up to seven days, by us only, and is then gone from it. Nobody using the app can
       see that history.</li>
     <li><strong>Who opened a backup:</strong> 30 days, in our server's logs.</li>
-    <li><strong>A holding nobody is paying for</strong> becomes read-only. Its records are not
-      deleted.</li>
+    <li><strong>A holding nobody is paying for</strong> becomes read-only
+      (<a href="terms.html#read-only">section 6.7 of the Terms and Conditions</a>). If it is still
+      read-only 12 months later, it is deleted with all its records. Its owner and directors are
+      told 90, 30 and 7 days before, by email, by a notification and by a banner in the app. Each
+      notice reminds them to take a backup, the unlocked copy (<a href="#collect">section 3.6</a>)
+      or the exports. The first also says that our earlier promise, that a holding would never be
+      deleted for not being paid for, is withdrawn. Subscribing, redeeming a promo code, or a
+      director taking the holding over stops it. Taking a copy does not. Records not taken out by
+      the day it is deleted are gone (<a href="terms.html#records">section 7 of the Terms and
+      Conditions</a>).</li>
+    <li><strong>Emails we send before a deletion:</strong> three years after the deletion, to
+      show that they were sent.</li>
     <li><strong>Records you made on a holding</strong> stay with that holding, with your name on
       them, after you leave it or delete your account. They are the farm's records, not yours
       alone.</li>
@@ -609,12 +831,15 @@
     <li><strong>Pay records</strong> are tax records, which the Tax Administration Act 28 of 2011
       has the employer keep for five years; the other employment records, three years under the
       Basic Conditions of Employment Act. We keep them while the holding exists. Before a holding
-      with employment records is deleted, the app asks its owner to take them first, because
-      deleting the holding deletes them.</li>
+      with employment records is deleted, its owner is asked to take them first, because deleting
+      the holding deletes them: by the app when the owner deletes it, and in the notices before a
+      holding read-only for 12 months is deleted.</li>
     <li><strong>Time-sheet signatures, and the days a worker marked as not right,</strong> are kept
       with the register, and cannot be changed or deleted in the app: they are the worker's word.
       A worker's PIN is kept until it is reset or the holding is deleted.</li>
     <li><strong>Purchase records:</strong> seven years, as Dutch tax law requires.</li>
+    <li><strong>Requests to end a yearly plan early, and refunds:</strong> seven years, with our
+      books.</li>
     <li><strong>Your phone's notification token:</strong> until you sign out on that phone or
       delete your account, or until Google tells us it no longer works, for example because the
       app was uninstalled.</li>
@@ -640,15 +865,22 @@
   <ul>
     <li><strong>Deleted:</strong> your sign-in, your profile (name, email address, phone number,
       photo link and the record of the terms you accepted), your membership of every holding, the
-      notification token of every phone you signed in on, the record of which phone and computer
-      you're signed in on, and the problems and ideas you sent from the app, with their
-      screenshots.</li>
+      notification token of every phone you signed in on, your alert choices, the record of which
+      phone and computer you're signed in on, and the problems and ideas you sent from the app,
+      with their screenshots.</li>
     <li><strong>Kept:</strong> records you made on a holding, with your name on them, because they
-      belong to the farm. The records are deleted when the holding is deleted.</li>
+      belong to the farm. The records are deleted when the holding is deleted. We also keep the
+      emails we sent before a deletion, for three years, and any request to end a yearly plan
+      early, and its refund, for seven years (<a href="#keep">section 9</a>).</li>
     <li><strong>If you own a holding,</strong> you must hand it over or delete it first. A holding
       without an owner cannot be managed by anybody, not even the people still working on it.</li>
     <li><strong>A subscription is not cancelled by deleting your account.</strong> Cancel it in
       Google Play first.</li>
+    <li><strong>If you stop using Country Manager:</strong> an account nobody has used for 2 years
+      (not opened or signed in to anywhere) that owns no holding is deleted in the same way. We
+      email you 90, 30 and 7 days before, and send a notification where your phone can still be
+      reached. Using the app again stops it. Records you made on a holding stay with it (see
+      <a href="#keep">section 9</a>).</li>
   </ul>
 
   <h2 id="protect">11. How we protect it</h2>
@@ -663,7 +895,9 @@
       Google's Key Management Service and that only our server can use. The server unlocks a
       backup only for the owner or a director of the holding it came from, so a lost or forwarded
       copy gives nothing away, and someone taken off a holding can no longer open the backups
-      they took. A backup that has been changed will not open.</li>
+      they took. A backup that has been changed will not open. Once a holding is deleted, only
+      whoever owned it when a backup was taken can open that backup, so directors and others who
+      will want the records should save the unlocked copy or the exports before then.</li>
     <li>Invite codes can be made to expire and can be withdrawn.</li>
     <li>Time-sheet PINs are stored only as salted hashes, checked on our server and never sent
       back to any phone. Pay records can be read only by the holding's owner and directors; the
@@ -673,9 +907,18 @@
     <li>An account can be used on one phone and one computer at a time. If your account is ever
       signed in somewhere else, the phone you were using is signed out and tells you where, so
       you can change your password if it wasn't you.</li>
-    <li>Deleting an account requires a fresh password or Google sign-in.</li>
-    <li>Your phone holds a copy of the records you open (see <a href="#collect">section 3.8</a>).
-      Use a screen lock. Anyone holding your unlocked phone can see what you can see.</li>
+    <li>You can switch on two-step sign-in in Account Settings. Signing in then also asks for a
+      code from an authenticator app, so a password that has leaked is not enough on its own.
+      Switching it off asks you to confirm it is you, then for a code. If you sign in with
+      Google, confirming on your own phone asks for no password, so keep your phone locked.</li>
+    <li>Deleting an account requires a fresh password or Google sign-in, and the code as well if
+      two-step sign-in is on.</li>
+    <li>The app proves to our servers that it is the real Country Manager app (App Check, see
+      <a href="#collect">section 3.7</a>).</li>
+    <li>Your phone, or the browser you use, holds a copy of the records you open (see
+      <a href="#collect">section 3.8</a>). Use a screen lock, and sign out of a browser that other
+      people use. Anyone holding your unlocked phone, or using a browser you are signed in on, can
+      see what you can see.</li>
   </ul>
   <p>If we believe someone has got hold of personal information without permission, we will tell
   the supervisory authorities and the people affected as the law requires: under the GDPR within
@@ -693,10 +936,12 @@
     <li>withdraw consent, where we rely on it</li>
     <li>complain to a supervisory authority (see <a href="#contact">section 16</a>)</li>
   </ul>
-  <p>You can do much of this yourself. Edit your profile in Account Settings, take a backup of the
-  farm's records if you are a director or manager, or delete your account. For anything else, email
-  us. We will check that the request really comes from you and answer within one month. We don't
-  charge for this.</p>
+  <p>You can do much of this yourself. Edit your profile in Account Settings, or delete your
+  account. A holding's owner, directors and managers can take a backup of the farm's records, and
+  its owner or a director can save an unlocked copy of them, which can be read with ordinary
+  software (see
+  <a href="#collect">section 3.6</a>). For anything else, email us. We will check that the request
+  really comes from you and answer within one month. We don't charge for this.</p>
   <p>If a farm keeps records about you, for example as its employee, ask the farm first, because it
   decides about those records. If that doesn't work, contact us. We will pass your request to the
   holding's owner and help them answer it.</p>
