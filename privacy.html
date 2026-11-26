@@ -23,7 +23,7 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Country Manager &middot; Last updated 25 November 2026 &middot; Version 2026-11-25</p>
+  <p class="meta">Country Manager &middot; Last updated 26 November 2026 &middot; Version 2026-11-26</p>
 
   <p class="lede">This policy explains what the Country Manager app collects, why, who can see it,
   how long it is kept, and what you can ask us to do about it. Country Manager is used on farms in
@@ -684,9 +684,12 @@
             forecast, tells us when a problem or idea is sent, deletes a closed account's reports,
             takes holdings' automatic backups, locks and opens backups, checks time-sheet PINs,
             records signatures and the days a worker marks as not right, and shows a worker their
-            own time sheet</td>
-          <td>The records it needs for that, read from the database. It runs in Belgium, in the
-            European Union</td>
+            own time sheet. It also keeps a short note of which records of a holding changed and
+            when, so that each phone can fetch only those</td>
+          <td>The records it needs for that, read from the database. To keep that note, it is also
+            handed every record that is saved or deleted on a holding, as it was before and after;
+            of those it uses only which record it was, whether it still exists, and when it was
+            saved, and it keeps nothing of them. It runs in Belgium, in the European Union</td>
         </tr>
         <tr>
           <td>Google Cloud Key Management Service</td>
@@ -799,7 +802,8 @@
       towards the 2 years, or towards the 12 months below.</li>
     <li><strong>Farm records:</strong> for as long as the holding exists: until its owner deletes
       it, or until it is deleted after 12 months read-only, after notices (below). Deleting a
-      holding deletes all of its records, and its automatic backups 30 days later.</li>
+      holding deletes all of its records and the notes of which of them changed, and its
+      automatic backups 30 days later.</li>
     <li><strong>Automatic backups:</strong> the newest 14 daily, 8 weekly or 12 monthly copies,
       as the holding chooses; each new one replaces the oldest. Switched off, the copies already
       kept stay until the holding's owner or a director deletes them, or the holding is deleted.
@@ -809,6 +813,8 @@
       the database keeps its own history: a record that is changed or deleted can be read as it
       was for up to seven days, by us only, and is then gone from it. Nobody using the app can
       see that history.</li>
+    <li><strong>Notes of which records changed:</strong> 45 days, then deleted. A note names a
+      record by its number and says when it changed, never what is in it.</li>
     <li><strong>Who opened a backup:</strong> 30 days, in our server's logs.</li>
     <li><strong>A holding nobody is paying for</strong> becomes read-only
       (<a href="terms.html#read-only">section 6.7 of the Terms and Conditions</a>). If it is still
